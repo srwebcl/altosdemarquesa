@@ -56,11 +56,19 @@ export function HeroSection() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <Button size="lg" className="text-lg px-8 bg-primary hover:bg-primary/90 border-none shadow-xl shadow-primary/20" onClick={scrollToMap}>
-                            Ver Disponibilidad
+                        <Button
+                            onClick={openBooking}
+                            className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 rounded-full shadow-[0_0_20px_-5px_rgba(63,98,18,0.5)] hover:shadow-[0_0_30px_-5px_rgba(63,98,18,0.7)] transition-all duration-300 border border-primary/20"
+                        >
+                            Agendar una Visita
                         </Button>
-                        <Button size="lg" variant="outline" className="text-lg px-8 text-white border-white hover:bg-white hover:text-stone-900 bg-transparent backdrop-blur-sm" onClick={openBooking}>
-                            Conocer Más
+
+                        <Button
+                            onClick={scrollToMap}
+                            variant="white"
+                            className="bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-stone-900 text-lg px-8 py-6 rounded-full transition-all duration-300"
+                        >
+                            Explorar Masterplan
                         </Button>
                     </div>
 

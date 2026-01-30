@@ -8,9 +8,9 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {/* Brand & Description */}
                     <div className="space-y-4">
-                        <div className="relative h-12 w-48">
+                        <div className="relative h-16 w-56 md:h-18 md:w-64">
                             <img
-                                src="/images/logo-web.webp"
+                                src="/images/logo-web.svg"
                                 alt="Altos de Marquesa"
                                 className="object-contain object-left h-full w-full brightness-0 invert"
                             />
