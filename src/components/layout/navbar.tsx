@@ -34,10 +34,15 @@ export function Navbar() {
         >
             <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
                 {/* Logo */}
+                {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 font-serif text-2xl font-bold tracking-tighter hover:opacity-80 transition-opacity">
-                    <span className={isScrolled ? "text-primary" : "text-white drop-shadow-md"}>
-                        Altos de Marquesa
-                    </span>
+                    <div className="relative h-12 w-40">
+                        <img
+                            src="/images/logo-web.webp"
+                            alt="Altos de Marquesa"
+                            className={`object-contain object-left h-full w-full ${isScrolled ? "" : "brightness-0 invert drop-shadow-md"}`}
+                        />
+                    </div>
                 </Link>
 
                 {/* Desktop Nav */}

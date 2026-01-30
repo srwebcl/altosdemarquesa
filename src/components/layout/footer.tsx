@@ -8,7 +8,13 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {/* Brand & Description */}
                     <div className="space-y-4">
-                        <h3 className="text-2xl font-serif font-bold text-white">Altos de Marquesa</h3>
+                        <div className="relative h-12 w-48">
+                            <img
+                                src="/images/logo-web.webp"
+                                alt="Altos de Marquesa"
+                                className="object-contain object-left h-full w-full brightness-0 invert"
+                            />
+                        </div>
                         <p className="text-sm leading-relaxed max-w-xs">
                             Un proyecto exclusivo de Inmobiliaria Valle & Mar.
                             Vive la tranquilidad del Valle de Elqui con la conectividad que necesitas.
